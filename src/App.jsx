@@ -1,8 +1,14 @@
-function App() {
+import Button from './components/Button'
+import Input from './components/Input'
+
+const App = () => {
   return (
-    <>
-      <h1>hey Lucya</h1>
-    </>
+    <form className="form">
+      <div className="container">
+        <Input className="input input-form" type="text" placeholder="Enter your text" />
+        <Button className="input input-btn" type="button" text="Click me" />
+      </div>
+    </form>
   )
 }
 
